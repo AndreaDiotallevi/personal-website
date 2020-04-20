@@ -1,7 +1,12 @@
 import React from "react";
+import ProjectList from "./ProjectList";
 
 const App = () => {
-  return <div>App</div>;
+  return (
+    <div>
+      <ProjectList />
+    </div>
+  );
 };
 
 export default App;

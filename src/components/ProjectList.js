@@ -6,13 +6,9 @@ import projects from "../utils/projects";
 const ProjectList = () => {
   const renderList = () => {
     return projects.map((project) => (
-      <div className="project-list-item flex" key={project.name}>
-        <div>
-          <ProjectGif project={project} />
-        </div>
-        <div>
-          <ProjectOverview project={project} />
-        </div>
+      <div className="project-list-item" key={project.name}>
+        <ProjectGif project={project} />
+        <ProjectOverview project={project} />
       </div>
     ));
   };

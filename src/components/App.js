@@ -1,9 +1,11 @@
 import React from "react";
+import Header from "./Header";
 import ProjectList from "./ProjectList";
 
 const App = () => {
   return (
-    <div>
+    <div className="app-container">
+      <Header />
       <ProjectList />
     </div>
   );

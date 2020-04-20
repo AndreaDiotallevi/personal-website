@@ -1,0 +1,17 @@
+* {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.project-gif,
+.project-video {
+  width: 400px;
+  height: auto;
+}

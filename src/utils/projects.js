@@ -8,7 +8,7 @@ const projects = [
     githubUrl: "https://github.com/AndreaDiotallevi/the-movie-mapper",
     devTechnologies: "React, NodeJS, JavaScript, Python, Beautiful Soup",
     apis: "Google Maps, LocationIQ, OMDb",
-    testingTechnologies: "Jest, Enzime, CircleCI, AWS Amplify",
+    testingTechnologies: "Jest, Enzyme, CircleCI, AWS Amplify",
   },
   {
     name: "Albums Manager",
@@ -18,14 +18,14 @@ const projects = [
     demoUrl: "https://albums-manager.herokuapp.com",
     githubUrl: "https://github.com/AndreaDiotallevi/albums-manager",
     devTechnologies: "React, NodeJS, ExpressJS, MongoDB",
-    apis: "Last.fm",
+    apis: "LastFM",
     testingTechnologies: "Jest, Supertest, Enzyme, CircleCI, Heroku",
   },
   {
     name: "Generative Art",
     overview:
       "A website showcasing my personal generative art experimentations. The sketches have been produced with p5.js, a Javascript client-side library for creating graphic and interactive experiences, based on the core principles of Processing.",
-    videoUrl: "generativeart.mov",
+    videoUrl: "generative-art.mov",
     demoUrl: "https://www.andreadiotallevi.com",
     githubUrl: "https://github.com/AndreaDiotallevi/andreadiotallevi.com",
     devTechnologies: "React, NodeJS, JavaScript, p5.js",

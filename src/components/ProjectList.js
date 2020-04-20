@@ -13,7 +13,7 @@ const ProjectList = () => {
     ));
   };
 
-  return <div className="project-list-container">{renderList()}</div>;
+  return <div className="project-list-component">{renderList()}</div>;
 };
 
 export default ProjectList;

@@ -6,11 +6,16 @@
   padding: 0;
 }
 
+p {
+  color: rgb(56, 68, 76);
+}
+
 h3 {
-  font-size: 24px;
+  font-size: 25px;
   font-weight: 500;
   text-transform: uppercase;
   margin-bottom: 30px;
+  color: rgb(56, 68, 76);
 }
 
 .app-container {
@@ -19,12 +24,20 @@ h3 {
   align-items: center;
 }
 
-.header-container {
+.navbar-container {
   display: flex;
+  align-items: center;
   height: 100px;
   width: 100%;
-  background-color: grey;
+  background-color: rgb(56, 68, 76);
   margin-bottom: 100px;
+}
+
+.navbar-link {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
 }
 
 .project-list-container {
@@ -34,7 +47,7 @@ h3 {
 
 .project-list-item {
   display: flex;
-  width: 900px;
+  width: 1000px;
 }
 
 .project-list-item {
@@ -43,7 +56,7 @@ h3 {
 
 .project-gif,
 .project-video {
-  width: 430px;
+  width: 480px;
   height: auto;
   border-radius: 2%;
 }
@@ -68,15 +81,15 @@ span {
   display: flex;
 }
 
-p {
+span p {
   margin-bottom: 15px;
 }
 
-a {
-  color: black;
+span a {
+  color: rgb(56, 68, 76);
   text-decoration: none;
   font-weight: 500;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(56, 68, 76);
   padding-bottom: 2px;
   margin-bottom: 15px;
 }

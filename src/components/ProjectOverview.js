@@ -1,6 +1,17 @@
 import React from "react";
 
 const ProjectOverview = ({ project }) => {
+  const renderApis = () => {
+    if (project.apis !== null) {
+      return (
+        <span>
+          <p className="bold">External APIs: </p>
+          <p className="margin-left">{project.apis}</p>
+        </span>
+      );
+    }
+  };
+
   return (
     <div className="project-overview-container">
       <h3>{project.name}</h3>
@@ -9,10 +20,7 @@ const ProjectOverview = ({ project }) => {
         <p className="bold">Stack: </p>
         <p className="margin-left">{project.devTechnologies}</p>
       </span>
-      <span>
-        <p className="bold">External APIs: </p>
-        <p className="margin-left">{project.apis}</p>
-      </span>
+      {renderApis()}
       <span>
         <p className="bold">Testing, CI, CD: </p>
         <p className="margin-left">{project.testingTechnologies}</p>

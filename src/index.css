@@ -6,16 +6,8 @@
   padding: 0;
 }
 
-p {
-  color: rgb(56, 68, 76);
-}
-
-h3 {
-  font-size: 26px;
-  font-weight: 500;
-  text-transform: uppercase;
-  margin-bottom: 30px;
-  color: rgb(56, 68, 76);
+a {
+  color: black;
 }
 
 /* App */
@@ -34,8 +26,9 @@ h3 {
   align-items: center;
   height: 80px;
   width: 100%;
-  background-color: rgb(56, 68, 76);
-  box-shadow: 2px -2px 10px 0 rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgb(132, 132, 132, 0.2);
+  /* background-color: rgb(56, 68, 76); */
+  /* box-shadow: 2px -2px 10px 0 rgba(0, 0, 0, 0.2); */
 }
 
 .navbar-container {
@@ -52,22 +45,30 @@ h3 {
 }
 
 .navbar-title {
-  color: white;
+  /* color: white; */
   font-size: 26px;
   text-transform: uppercase;
   font-weight: 500;
+  opacity: 0.8;
 }
 
 .navbar-link {
-  color: white;
   text-decoration: none;
-  text-transform: uppercase;
-  font-size: 17px;
-  margin-left: 20px;
 }
 
-.navbar-link:hover {
-  text-decoration: underline;
+.navbar-link p,
+.navbar-anchor {
+  text-decoration: none;
+  text-transform: uppercase;
+  /* font-size: 13px; */
+  margin-left: 20px;
+  border-bottom: 1px solid white;
+}
+
+.navbar-link p:hover,
+.navbar-anchor:hover {
+  color: black;
+  border-bottom: 1px solid black;
   transition: 0.3s;
 }
 
@@ -86,7 +87,7 @@ h3 {
   /* font-weight: 500; */
   /* text-transform: uppercase; */
   font-style: italic;
-  color: rgb(56, 68, 76);
+  /* color: rgb(56, 68, 76); */
 }
 
 /* ProjectList */
@@ -110,8 +111,8 @@ h3 {
 .project-video {
   width: 485px;
   height: auto;
-  border-radius: 10px;
-  box-shadow: 2px -2px 10px 0 rgba(0, 0, 0, 0.2);
+  /* border-radius: 10px; */
+  /* box-shadow: 2px -2px 10px 0 rgba(0, 0, 0, 0.2); */
 }
 
 .project-video:hover {
@@ -128,12 +129,21 @@ h3 {
   margin-left: 40px;
 }
 
+.project-name {
+  font-size: 26px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  opacity: 0.8;
+}
+
 .project-overview {
   margin-bottom: 15px;
 }
 
 .bold {
   font-weight: 500;
+  opacity: 0.8;
 }
 
 .margin-left {
@@ -149,25 +159,64 @@ span p {
 }
 
 span a {
-  color: rgb(56, 68, 76);
+  /* color: rgb(56, 68, 76); */
+  color: black;
   text-decoration: none;
   font-weight: 500;
-  border: 1px solid white;
-  border-bottom: 1px solid rgb(56, 68, 76);
-  padding: 2px 5px;
-  margin-bottom: 15px;
+  /* border: 1px solid white; */
+  border-bottom: 1px solid white;
+  /* padding: 2px 5px; */
+  /* margin-bottom: 15px; */
   margin-left: 15px;
+  opacity: 0.8;
 }
 
 span a:hover {
-  color: white;
-  background-color: rgb(56, 68, 76);
+  /* color: white; */
+  /* background-color: black; */
   transition: 0.3s;
-  border: 1px solid rgb(56, 68, 76);
-  border-radius: 2px;
+  border-bottom: 1px solid black;
+  /* border: 1px solid black; */
+  /* border-radius: 2px; */
 }
 
 .project-overview-links {
   display: flex;
   justify-content: flex-end;
+}
+
+/* Contact */
+
+.contact-component {
+  display: flex;
+  width: 1010px;
+}
+
+.profile-photo {
+  width: 485px;
+  /* border-radius: 10px; */
+  /* box-shadow: 2px -2px 10px 0 rgba(0, 0, 0, 0.2); */
+}
+
+.contact-overview-container {
+  margin-left: 40px;
+}
+
+.contact-overview-container h4 {
+  font-size: 17px;
+  margin-bottom: 15px;
+}
+
+.contact-overview-container p {
+  margin-bottom: 15px;
+}
+
+.email-anchor {
+  text-decoration: none;
+  border-bottom: 1px solid white;
+}
+
+.email-anchor:hover {
+  border-bottom: 1px solid black;
+  transition: 0.3s;
 }

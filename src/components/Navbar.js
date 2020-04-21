@@ -13,15 +13,15 @@ const Navbar = () => {
             href="https://medium.com/@andreadiotallevi"
             target="_blank"
             rel="noopener noreferrer"
-            className="navbar-link"
+            className="navbar-anchor"
           >
             Blog
           </a>
           <Link to="/" className="navbar-link">
-            <p className="navbar-link">Projects</p>
+            <p>Work</p>
           </Link>
-          <Link to="/about" className="navbar-link">
-            <p className="navbar-link">About</p>
+          <Link to="/contact" className="navbar-link">
+            <p>Contact</p>
           </Link>
         </div>
       </div>

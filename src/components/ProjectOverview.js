@@ -15,7 +15,7 @@ const ProjectOverview = ({ project }) => {
   return (
     <div className="project-overview-component">
       <div>
-        <h3>{project.name}</h3>
+        <h3 className="project-name">{project.name}</h3>
         <p className="project-overview">{project.overview}</p>
         <span>
           <p className="bold">Stack: </p>

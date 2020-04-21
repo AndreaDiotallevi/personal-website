@@ -2,7 +2,7 @@ import React from "react";
 
 const pageTitles = {
   "/": "My Software Development Projects",
-  "/about": "About Me",
+  "/contact": "About Me",
 };
 
 const PageTitle = ({ history }) => {

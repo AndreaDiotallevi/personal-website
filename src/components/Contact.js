@@ -24,6 +24,7 @@ const Contact = () => {
           custom algorithm capable of generating a sequence of unique, but
           aesthetically related images.
         </p>
+        <p className="line-separator">------</p>
         <h4>Email</h4>
         <a className="email-anchor" href="andrea.diotallevi@outlook.com">
           andrea.diotallevi@outlook.com

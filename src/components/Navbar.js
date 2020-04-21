@@ -6,7 +6,9 @@ const Navbar = () => {
     <div className="navbar-component">
       <div className="navbar-container">
         <div className="navbar-left">
-          <h1 className="navbar-title">Andrea Diotallevi</h1>
+          <Link to="/">
+            <h1 className="navbar-title">Andrea Diotallevi</h1>
+          </Link>
         </div>
         <div className="navbar-right">
           <a
@@ -18,7 +20,7 @@ const Navbar = () => {
             Blog
           </a>
           <Link to="/" className="navbar-link">
-            <p>Work</p>
+            <p>Dev</p>
           </Link>
           <Link to="/contact" className="navbar-link">
             <p>Contact</p>

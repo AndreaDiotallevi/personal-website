@@ -11,12 +11,21 @@ a {
   text-decoration: none;
 }
 
+#root {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
 /* App */
 
 .app-component {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
 }
 
 /* Navbar */
@@ -66,6 +75,25 @@ a {
   color: black;
   border-bottom: 1px solid black;
   transition: 0.3s;
+}
+
+/* Home */
+
+.home-component {
+  height: 100%;
+  background-color: rgb(56, 68, 76);
+}
+
+.home-container {
+  height: 100%;
+}
+
+.home-page-text {
+  position: absolute;
+  width: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* PageTitle */

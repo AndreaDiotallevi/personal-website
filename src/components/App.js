@@ -1,14 +1,14 @@
 import React from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 
-import Navbar from "../Navbar/Navbar";
-import PageTitle from "../PageTitle/PageTitle";
-import Home from "../Home/Home";
-import ProjectList from "../ProjectList/ProjectList";
-import Contact from "../Contact/Contact";
-import Footer from "../Footer/Footer";
-import Menu from "../Menu/Menu";
-// import Blog from "../Blog/Blog";
+import Navbar from "./Navbar";
+import PageTitle from "./PageTitle";
+import Home from "./Home";
+import ProjectList from "./ProjectList";
+import Contact from "./Contact";
+import Footer from "./Footer";
+import Menu from "./Menu";
+// import Blog from "./Blog";
 
 class App extends React.Component {
   state = {

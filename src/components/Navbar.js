@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import MenuToggleButton from "../MenuToggleButton/MenuToggleButton";
-import routes from "../../utils/routes";
+import MenuToggleButton from "./MenuToggleButton";
+import routes from "../utils/routes";
 
 const Navbar = ({ open, onClick, history }) => {
   const pathname = history.location.pathname;

@@ -1,6 +1,6 @@
 const routes = [
   {
-    menuName: "Dev Portfolio",
+    menuName: "Portfolio",
     baseUrl: "/portfolio",
     pageTitle: "",
   },
@@ -8,7 +8,7 @@ const routes = [
   {
     menuName: "Home",
     baseUrl: "/",
-    pageTitle: "Software Engineer and Generative Artist",
+    pageTitle: "Full Stack Software Engineer",
   },
 ];
 

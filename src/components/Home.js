@@ -1,5 +1,5 @@
 import React from "react";
-import Moonlight from "../Moonlight/Moonlight";
+import Moonlight from "./Moonlight";
 
 const Home = (props) => {
   return (

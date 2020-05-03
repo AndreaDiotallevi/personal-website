@@ -1,5 +1,5 @@
 import React from "react";
-import routes from "../../utils/routes";
+import routes from "../utils/routes";
 
 const PageTitle = ({ history }) => {
   const pathname = history.location.pathname;

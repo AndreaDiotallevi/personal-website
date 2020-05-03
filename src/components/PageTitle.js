@@ -1,18 +1,34 @@
 import React from "react";
-
-const pageTitles = {
-  "/dev": "My Software Development Projects",
-  "/contact": "About Me",
-};
+import routes from "../../utils/routes";
 
 const PageTitle = ({ history }) => {
-  if (history.location.pathname === "/") {
-    return null;
-  }
+  const pathname = history.location.pathname;
+
+  const getComponentClassName = () => {
+    if (pathname === "/") {
+      return "is-home-component";
+    }
+  };
+
+  const getDescriptionClassName = () => {
+    if (pathname === "/") {
+      return "is-home-description";
+    }
+  };
+
+  const getPageTitle = () => {
+    const baseUrl = "/" + pathname.split("/")[1];
+    const route = routes.filter((route) => route.baseUrl === baseUrl)[0];
+    return route.pageTitle;
+  };
 
   return (
-    <div className="page-title-component">
-      <h2 className="page-title">{pageTitles[history.location.pathname]}</h2>
+    <div className={`page-title-component ${getComponentClassName()}`}>
+      <div className="page-title-container">
+        <h2 className={`page-title ${getDescriptionClassName()}`}>
+          {getPageTitle()}
+        </h2>
+      </div>
     </div>
   );
 };

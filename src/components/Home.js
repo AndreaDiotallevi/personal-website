@@ -1,11 +1,25 @@
 import React from "react";
-import Moonlight from "./Moonlight";
+import { Link } from "react-router-dom";
 
-const Home = (props) => {
+const Home = () => {
   return (
-    <div id="home-component">
-      <div id="home-container">
-        <Moonlight />
+    <div className="home-component">
+      <div className="home-container">
+        <h1>Hello! My name is Andrea Diotallevi</h1>
+        <p>
+          Check out my latest projects <Link to="/portfolio">here</Link>.
+        </p>
+        <p>
+          And my latest articles{" "}
+          <a
+            href="https://medium.com/@andreadiotallevi"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            here
+          </a>
+          .
+        </p>
       </div>
     </div>
   );

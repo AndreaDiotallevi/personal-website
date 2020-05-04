@@ -5,9 +5,10 @@ import Navbar from "./Navbar";
 import PageTitle from "./PageTitle";
 import Home from "./Home";
 import ProjectList from "./ProjectList";
+import About from "./About";
 import Contact from "./Contact";
-import Footer from "./Footer";
 import Menu from "./Menu";
+// import Footer from "./Footer";
 // import Blog from "./Blog";
 
 class App extends React.Component {
@@ -48,9 +49,10 @@ class App extends React.Component {
           <Route component={PageTitle} />
           <Route path="/" exact component={Home} />
           <Route path="/portfolio" exact component={ProjectList} />
+          <Route path="/about" exact component={About} />
           <Route path="/contact" exact component={Contact} />
           {/* <Route path="/blog" exact component={Blog} /> */}
-          <Route component={Footer} />
+          {/* <Route component={Footer} /> */}
         </BrowserRouter>
       </div>
     );

@@ -7,13 +7,17 @@ const ProjectList = () => {
   const renderList = () => {
     return projects.map((project) => (
       <div className="project-list-item" key={project.name}>
-        <ProjectGif project={project} />
         <ProjectOverview project={project} />
+        <ProjectGif project={project} />
       </div>
     ));
   };
 
-  return <div className="project-list-component">{renderList()}</div>;
+  return (
+    <div className="project-list-component">
+      <div className="project-list-container">{renderList()}</div>
+    </div>
+  );
 };
 
 export default ProjectList;

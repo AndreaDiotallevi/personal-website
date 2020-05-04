@@ -9,10 +9,6 @@ const Navbar = ({ open, onClick, history }) => {
   const getLinkClassName = (url) => {
     let classes = "";
 
-    if (pathname === "/") {
-      classes += " is-home";
-    }
-
     if (pathname.includes(url) && url !== "/") {
       classes += " link-active";
     } else if (pathname === "/" && url === "/") {
@@ -22,17 +18,8 @@ const Navbar = ({ open, onClick, history }) => {
     return classes;
   };
 
-  const getComponentClassName = () => {
-    if (history.location.pathname === "/") {
-      return "is-home-component";
-    }
-  };
-
   return (
-    <div
-      id="navbar-component"
-      className={`navbar-component ${getComponentClassName()}`}
-    >
+    <div id="navbar-component" className="navbar-component">
       <div id="navbar-container">
         <div className="navbar-left">
           <Link to="/">
@@ -40,30 +27,33 @@ const Navbar = ({ open, onClick, history }) => {
               id="navbar-title"
               className={`navbar-title ${getLinkClassName()}`}
             >
-              ANDREA DIOTALLEVI
+              Andrea Diotallevi
             </h1>
           </Link>
         </div>
-        <div className="navbar-right">
+        <ul className="navbar-right">
           {routes.map((route) => (
-            <Link
-              to={route.baseUrl}
-              className={`navbar-link ${getLinkClassName(route.baseUrl)}`}
-              key={route.menuName}
-            >
-              {route.menuName}
-            </Link>
+            <li key={route.menuName}>
+              <Link
+                to={route.baseUrl}
+                className={`navbar-link ${getLinkClassName(route.baseUrl)}`}
+              >
+                {route.menuName}
+              </Link>
+            </li>
           ))}
-          <a
-            href="https://medium.com/@andreadiotallevi"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`navbar-link ${getLinkClassName()}`}
-          >
-            Blog
-          </a>
+          <li key="blog">
+            <a
+              href="https://medium.com/@andreadiotallevi"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`navbar-link ${getLinkClassName()}`}
+            >
+              Blog
+            </a>
+          </li>
           <MenuToggleButton open={open} onClick={onClick} history={history} />
-        </div>
+        </ul>
       </div>
     </div>
   );

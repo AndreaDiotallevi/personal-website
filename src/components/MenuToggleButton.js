@@ -1,21 +1,9 @@
 import React from "react";
 
-const MenuToggleButton = ({ open, onClick, history }) => {
-  const getButtonClassName = () => {
-    let classes = "";
-    if (history.location.pathname === "/") {
-      classes += " is-home-button";
-    }
-    if (open) {
-      classes += " menu-open";
-    }
-
-    return classes;
-  };
-
+const MenuToggleButton = ({ open, onClick }) => {
   return (
     <button
-      className={`toggle-button ${getButtonClassName()}`}
+      className={`toggle-button ${open ? "menu-open" : undefined}`}
       onClick={onClick}
     >
       <span></span>

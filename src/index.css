@@ -1,23 +1,5 @@
 @font-face {
   font-family: "Apercu webfont";
-  src: url("./fonts/Apercu-Bold.woff") format("woff"),
-    url("./fonts/Apercu-Bold.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Apercu webfont";
-  src: url("./fonts/Apercu-Medium.woff") format("woff"),
-    url("./fonts/Apercu-Medium.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Apercu webfont";
-  src: url("./fonts/Apercu.woff") format("woff"),
-    url("./fonts/Apercu.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Apercu webfont";
   src: url("./fonts/Apercu-Light.woff") format("woff"),
     url("./fonts/Apercu-Light.ttf") format("truetype");
 }
@@ -128,7 +110,6 @@ body,
 .navbar-title {
   font-weight: bold;
   white-space: nowrap;
-  /* text-transform: uppercase; */
   font-size: 26px;
 }
 

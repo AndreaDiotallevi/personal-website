@@ -5,12 +5,6 @@ import routes from "../utils/routes";
 const Menu = ({ open, onClick, history }) => {
   const pathname = history.location.pathname;
 
-  const getButtonClassName = () => {
-    if (pathname === "/") {
-      return "is-home-component";
-    }
-  };
-
   const getLinkClassName = (url) => {
     let classes = "";
 
@@ -52,11 +46,7 @@ const Menu = ({ open, onClick, history }) => {
     }
   };
 
-  return (
-    <div className={`menu-component ${getButtonClassName()}`}>
-      {renderList()}
-    </div>
-  );
+  return <div className="menu-component">{renderList()}</div>;
 };
 
 export default Menu;

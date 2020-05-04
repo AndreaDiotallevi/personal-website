@@ -21,6 +21,8 @@ const Contact = () => {
               <a
                 className="social-media-anchor"
                 href="https://www.linkedin.com/in/andrea-diotallevi/"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Linkedin
               </a>
@@ -28,6 +30,8 @@ const Contact = () => {
               <a
                 className="social-media-anchor"
                 href="https://github.com/AndreaDiotallevi/cv"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 GitHub
               </a>

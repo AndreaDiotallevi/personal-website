@@ -111,6 +111,9 @@ body,
   font-weight: bold;
   white-space: nowrap;
   font-size: 26px;
+  /* text-transform: uppercase; */
+  /* text-transform: lowercase; */
+  /* letter-spacing: 3px; */
 }
 
 .link-active {

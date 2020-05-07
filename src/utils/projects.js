@@ -22,6 +22,17 @@ const projects = [
     apis: "LastFM",
     testingTechnologies: "Jest, Supertest, Enzyme, CircleCI, Heroku",
   },
+  {
+    name: "Generative Art",
+    overview:
+      "A static website showcasing my generative art experimentations with the JavaScript library p5.js.",
+    videoUrl: "generative-art.mov",
+    demoUrl: "https://www.andreadiotalleviart.com/",
+    githubUrl: "https://github.com/AndreaDiotallevi/generative-art-website",
+    devTechnologies: "React, Node, CSS Flexbox and p5.js.",
+    apis: "LastFM",
+    testingTechnologies: "Jest, Supertest, Enzyme, CircleCI, Netlify",
+  },
 ];
 
 export default projects;

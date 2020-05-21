@@ -8,7 +8,7 @@ const routes = [
   {
     menuName: "Contact",
     baseUrl: "/contact",
-    pageTitle: "My Social Media Links",
+    pageTitle: "Let's work together",
   },
   {
     menuName: "Home",

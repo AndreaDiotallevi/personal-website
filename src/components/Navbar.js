@@ -27,7 +27,7 @@ const Navbar = ({ open, onClick, history }) => {
               id="navbar-title"
               className={`navbar-title ${getLinkClassName()}`}
             >
-              Andrea Diotallevi
+              AndreaDiotallevi
             </h1>
           </Link>
         </div>

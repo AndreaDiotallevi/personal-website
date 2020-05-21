@@ -111,8 +111,9 @@ body,
 .navbar-title {
   font-weight: bold;
   white-space: nowrap;
-  font-size: 26px;
   font-size: 24px;
+  text-transform: lowercase;
+  opacity: 0.5;
 }
 
 .link-active {
@@ -291,7 +292,6 @@ body,
 }
 
 .home-container h1 {
-  font-size: 36px;
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 40px;
@@ -328,7 +328,7 @@ body,
 
 .page-title {
   text-transform: lowercase;
-  font-style: italic;
+  /* font-style: italic; */
   text-align: center;
   opacity: 0.5;
 }
@@ -366,7 +366,6 @@ body,
 }
 
 .project-name {
-  font-size: 36px;
   font-size: 24px;
   margin-bottom: 30px;
   font-weight: bold;
@@ -433,7 +432,7 @@ body,
 }
 
 .about-overview-container h1 {
-  font-size: 36px;
+  font-size: 24px;
   font-weight: bold;
   margin-bottom: 40px;
 }
@@ -470,7 +469,7 @@ body,
 }
 
 .contact-container h1 {
-  font-size: 36px;
+  font-size: 24px;
   font-weight: bold;
   margin-bottom: 40px;
 }

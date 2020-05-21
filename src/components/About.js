@@ -6,7 +6,7 @@ const About = () => {
     <div className="about-component">
       <div className="about-container">
         <div className="about-overview-container">
-          <h1>About Me</h1>
+          {/* <h1>About Me</h1> */}
           <p>I am a full-stack software engineer based in London.</p>
           <p>
             I have expertise in designing, implementing, and maintaining

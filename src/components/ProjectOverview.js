@@ -9,13 +9,13 @@ const ProjectOverview = ({ project }) => {
       <p>
         Check out the{" "}
         <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
-          Live demo
-        </a>{" "}
-        and the{" "}
-        <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-          GitHub code
+          website
         </a>
-        .
+        , the{" "}
+        <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+          code
+        </a>{" "}
+        or play with the embedded application below.
       </p>
     </div>
   );

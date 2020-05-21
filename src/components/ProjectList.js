@@ -1,6 +1,6 @@
 import React from "react";
-import ProjectGif from "./ProjectGif";
 import ProjectOverview from "./ProjectOverview";
+import ProjectIFrame from "./ProjectIFrame";
 import projects from "../utils/projects";
 
 const ProjectList = () => {
@@ -8,7 +8,7 @@ const ProjectList = () => {
     return projects.map((project) => (
       <div className="project-list-item" key={project.name}>
         <ProjectOverview project={project} />
-        <ProjectGif project={project} />
+        <ProjectIFrame project={project} />
       </div>
     ));
   };

@@ -18,11 +18,6 @@ export default [
     imageUrl: "https://miro.medium.com/max/1400/1*lc5X8DcDSwQ5SQDvHoA9Cg.jpeg",
     summary:
       "In this article, I explore the fundamental components of test-driven development, with an example of how to incrementally develop an algorithm using the TTD cycle.",
-    tags: [
-      "Test Driven Development",
-      "Algorithms",
-      "Best Practices",
-      "Javascript",
-    ],
+    tags: ["Test Driven Development", "Algorithms", "Javascript"],
   },
 ];

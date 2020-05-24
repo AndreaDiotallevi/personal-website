@@ -262,7 +262,7 @@ body,
 
 .menu-item {
   margin-top: 20px;
-  animation: 1s appear forwards;
+  /* animation: 1s appear forwards; */
   align-self: flex-end;
 }
 
@@ -280,7 +280,7 @@ body,
   flex-direction: column;
   width: 680px;
   margin-bottom: 100px;
-  animation: 1s appear forwards;
+  /* animation: 1s appear forwards; */
 }
 
 .home-container h1 {
@@ -341,7 +341,7 @@ body,
   flex-direction: column;
   margin-bottom: 100px;
   width: 100%;
-  animation: 1s appear forwards;
+  /* animation: 1s appear forwards; */
 }
 
 /* ProjectOverview */
@@ -354,14 +354,29 @@ body,
 }
 
 .project-name {
-  font-size: 36px;
-  margin-bottom: 30px;
+  font-size: 24px;
+  margin-bottom: 10px;
   font-weight: bold;
 }
 
 .project-overview-component p {
+  /* font-size: 14px; */
   margin-bottom: 15px;
-  width: 100%;
+}
+
+.project-overview-component ul {
+  display: flex;
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+.project-overview-component ul li p {
+  font-size: 14px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  background-color: rgba(0, 0, 255, 0.25);
+  padding: 5px;
+  border-radius: 5px;
 }
 
 /* ProjectIFrame */
@@ -412,7 +427,7 @@ body,
   flex-direction: column;
   width: 680px;
   margin-bottom: 100px;
-  animation: 1s appear forwards;
+  /* animation: 1s appear forwards; */
 }
 
 .about-overview-container h1 {
@@ -443,7 +458,7 @@ body,
   flex-direction: column;
   width: 680px;
   margin-bottom: 100px;
-  animation: 1s appear forwards;
+  /* animation: 1s appear forwards; */
 }
 
 .profile-photo {
@@ -491,7 +506,7 @@ body,
 }
 
 .blog-list-container ul li {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   display: flex;
 }
 
@@ -538,7 +553,7 @@ body,
   border-radius: 5px;
 }
 
-/* BlogList & BlogPost */
+/* BlogPost */
 
 .blog-post-component {
   display: flex;

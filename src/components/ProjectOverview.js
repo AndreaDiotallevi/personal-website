@@ -5,7 +5,13 @@ const ProjectOverview = ({ project }) => {
     <div className="project-overview-component">
       <h1 className="project-name">{project.name}</h1>
       <p className="project-overview">{project.overview}</p>
-      <p>Built with {project.devTechnologies}</p>
+      <ul>
+        {project.technologies.map((technology) => (
+          <li key={technology}>
+            <p>{technology}</p>
+          </li>
+        ))}
+      </ul>
       <p>
         Check out the{" "}
         <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">

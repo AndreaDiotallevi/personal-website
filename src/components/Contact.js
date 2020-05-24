@@ -7,19 +7,15 @@ const Contact = () => {
         {/* <h1>Let's Talk</h1> */}
         <div>
           <h4>Email</h4>
-          <a
-            className="social-media-anchor"
-            href="mailto: andrea.diotallevi@outlook.com"
-          >
+          <a href="mailto: andrea.diotallevi@outlook.com">
             andrea.diotallevi@outlook.com
           </a>
         </div>
         <div>
           <h4>Social</h4>
-          <div className="social-media-links-container">
+          <div>
             <p>
               <a
-                className="social-media-anchor"
                 href="https://www.linkedin.com/in/andrea-diotallevi/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -28,7 +24,6 @@ const Contact = () => {
               </a>
               {" / "}
               <a
-                className="social-media-anchor"
                 href="https://github.com/AndreaDiotallevi/cv"
                 target="_blank"
                 rel="noopener noreferrer"

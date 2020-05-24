@@ -315,10 +315,10 @@ body,
 }
 
 .page-title {
-  text-transform: lowercase;
-  /* font-style: italic; */
+  /* text-transform: lowercase; */
   text-align: center;
-  opacity: 0.5;
+  font-size: 15px;
+  /* opacity: 0.5; */
 }
 
 /* ProjectList */
@@ -360,18 +360,23 @@ body,
 }
 
 .project-overview-component p {
-  /* font-size: 14px; */
+  font-size: 15px;
   margin-bottom: 15px;
+}
+
+.project-overview-component h4 {
+  margin-bottom: 5px;
 }
 
 .project-overview-component ul {
   display: flex;
   list-style: none;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
 }
 
 .project-overview-component ul li p {
-  font-size: 14px;
+  font-size: 15px;
   margin-right: 5px;
   margin-bottom: 5px;
   background-color: rgba(0, 0, 255, 0.25);
@@ -431,13 +436,14 @@ body,
 }
 
 .about-overview-container h1 {
-  font-size: 36px;
+  font-size: 24px;
   font-weight: bold;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .about-container p {
   margin-bottom: 15px;
+  /* font-size: 15px; */
 }
 
 .about-overview-container {
@@ -481,12 +487,14 @@ body,
 }
 
 .contact-container div h4 {
+  font-weight: bold;
+  font-size: 24px;
   margin-bottom: 7px;
   width: max-content;
 }
 
-.social-media-links-container {
-  display: flex;
+.contact-container div a {
+  width: fit-content;
 }
 
 /* BlogList */
@@ -523,7 +531,7 @@ body,
 
 .blog-list-container ul li div p {
   margin-bottom: 10px;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .blog-list-container ul li div a img {
@@ -538,6 +546,7 @@ body,
 .blog-list-container ul li div ul {
   display: flex;
   margin-bottom: 5px;
+  flex-wrap: wrap;
 }
 
 .blog-list-container ul li div ul li {
@@ -545,7 +554,7 @@ body,
 }
 
 .blog-list-container ul li div ul li p {
-  font-size: 14px;
+  font-size: 15px;
   margin-right: 5px;
   margin-bottom: 5px;
   background-color: rgba(0, 0, 255, 0.25);
@@ -603,12 +612,12 @@ body,
 }
 
 .blog-post-container div figcaption p {
-  font-size: 14px;
+  font-size: 15px;
   margin-top: 10px;
 }
 
 .blog-post-container div figcaption p a {
-  font-size: 14px;
+  font-size: 15px;
   background-image: linear-gradient(
     transparent 0%,
     transparent calc(50% - 6px),
@@ -731,7 +740,7 @@ body,
 
   .blog-post-container pre code,
   .blog-post-container span {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .blog-list-container ul li {
@@ -743,10 +752,6 @@ body,
     margin-bottom: 10px;
     width: 100%;
     max-width: none;
-  }
-
-  .blog-list-container ul li div ul {
-    flex-wrap: wrap;
   }
 }
 

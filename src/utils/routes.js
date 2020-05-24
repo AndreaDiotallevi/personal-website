@@ -2,23 +2,23 @@ const routes = [
   {
     menuName: "Portfolio",
     baseUrl: "/portfolio",
-    pageTitle: "My Recent Software Development Projects",
+    pageTitle: "",
   },
   {
     menuName: "Blog",
     baseUrl: "/blog",
     pageTitle: "",
   },
-  { menuName: "About", baseUrl: "/about", pageTitle: "My Story" },
+  { menuName: "About", baseUrl: "/about", pageTitle: "" },
   {
     menuName: "Contact",
     baseUrl: "/contact",
-    pageTitle: "Let's work together",
+    pageTitle: "",
   },
   {
     menuName: "Home",
     baseUrl: "/",
-    pageTitle: "Full Stack Software Engineer",
+    pageTitle: "",
   },
 ];
 

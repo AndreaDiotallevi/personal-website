@@ -10,14 +10,7 @@ const Home = () => {
           Check out my <Link to="/portfolio">latest projects</Link>
         </p>
         <p>
-          And my{" "}
-          <a
-            href="https://medium.com/@andreadiotallevi"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            latest articles
-          </a>
+          And my <Link to="/blog">latest articles</Link>
         </p>
       </div>
     </div>

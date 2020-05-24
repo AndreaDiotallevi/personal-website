@@ -146,18 +146,6 @@ body,
   opacity: 0.5;
 }
 
-.navbar-right :nth-child(4) {
-  order: 3;
-}
-
-.navbar-right :nth-child(3) {
-  order: 2;
-}
-
-.navbar-right :nth-child(2) {
-  order: 1;
-}
-
 /* MenuToggleButton */
 
 .toggle-button {
@@ -276,18 +264,6 @@ body,
   margin-top: 20px;
   animation: 1s appear forwards;
   align-self: flex-end;
-}
-
-.menu-component :nth-child(4) {
-  order: 3;
-}
-
-.menu-component :nth-child(3) {
-  order: 2;
-}
-
-.menu-component :nth-child(2) {
-  order: 1;
 }
 
 /* Home */
@@ -498,61 +474,126 @@ body,
   display: flex;
 }
 
-/* Blog */
+/* BlogList */
 
-.blog-component {
+.blog-list-component {
   display: flex;
   justify-content: center;
   margin-bottom: auto;
   width: 100%;
 }
 
-.blog-container {
+.blog-list-container {
+  display: flex;
+  flex-direction: column;
+  width: 680px;
+  margin-bottom: 50px;
+}
+
+.blog-list-container ul li {
+  margin-bottom: 50px;
+  display: flex;
+}
+
+.blog-list-container ul li div h1 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.blog-list-container ul li div h1 a {
+  font-size: 24px;
+  font-weight: bold;
+  background-image: none;
+}
+
+.blog-list-container ul li div p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.blog-list-container ul li div a img {
+  object-fit: cover;
+  height: 200px;
+  max-width: 200px;
+  width: auto;
+  overflow: hidden;
+  margin-right: 30px;
+}
+
+.blog-list-container ul li div ul {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.blog-list-container ul li div ul li {
+  margin-bottom: 0;
+}
+
+.blog-list-container ul li div ul li p {
+  font-size: 14px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  background-color: rgba(0, 0, 255, 0.25);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* BlogList & BlogPost */
+
+.blog-post-component {
+  display: flex;
+  justify-content: center;
+  margin-bottom: auto;
+  width: 100%;
+}
+
+.blog-post-container {
   display: flex;
   flex-direction: column;
   width: 680px;
   overflow-x: auto;
+  margin-bottom: 150px;
 }
 
-.blog-container h1 {
+.blog-post-container h1 {
   font-size: 36px;
   font-weight: bold;
 }
 
-.blog-container h2 {
+.blog-post-container h2 {
   font-size: 30px;
   font-weight: bold;
   margin-top: 50px;
 }
 
-.blog-container h3 {
+.blog-post-container h3 {
   font-size: 24px;
   font-weight: bold;
   margin-top: 50px;
 }
 
-.blog-container h4 {
+.blog-post-container h4 {
   margin-top: 10px;
 }
 
-.blog-container div figure img {
+.blog-post-container div figure img {
   width: 100%;
   margin-top: 30px;
 }
 
-.blog-container div figcaption {
+.blog-post-container div figcaption {
   text-align: center;
   font-style: normal;
   width: 100%;
 }
 
-.blog-container div figcaption p,
-.blog-container div figcaption p a {
+.blog-post-container div figcaption p {
   font-size: 14px;
   margin-top: 10px;
 }
 
-.blog-container div figcaption p a {
+.blog-post-container div figcaption p a {
+  font-size: 14px;
   background-image: linear-gradient(
     transparent 0%,
     transparent calc(50% - 6px),
@@ -561,7 +602,7 @@ body,
   );
 }
 
-.blog-container p a {
+.blog-post-container p a {
   background-image: linear-gradient(
     transparent 0%,
     transparent calc(50% - 9px),
@@ -570,15 +611,15 @@ body,
   );
 }
 
-.blog-container p {
+.blog-post-container p {
   margin-top: 30px;
 }
 
-.blog-container p strong {
+.blog-post-container p strong {
   font-weight: bold;
 }
 
-.blog-container p a:hover {
+.blog-post-container p a:hover {
   background-image: linear-gradient(
     transparent calc(50% - 9px),
     rgb(0, 0, 255, 0.25) calc(50% - 9px),
@@ -587,16 +628,16 @@ body,
   background-position: 0px 100%;
 }
 
-.blog-container ul {
+.blog-post-container ul {
   list-style-position: inside;
 }
 
-.blog-container ul li {
+.blog-post-container ul li {
   margin-top: 25px;
 }
 
-.blog-container pre code,
-.blog-container span {
+.blog-post-container pre code,
+.blog-post-container span {
   font-size: 16px;
 }
 
@@ -656,7 +697,8 @@ body,
   .project-list-container,
   .contact-container,
   .about-container,
-  .blog-container,
+  .blog-list-container,
+  .blog-post-container,
   .menu-component ul {
     margin-right: 40px;
     margin-left: 40px;
@@ -672,9 +714,24 @@ body,
     font-size: 18px;
   }
 
-  .blog-container pre code,
-  .blog-container span {
+  .blog-post-container pre code,
+  .blog-post-container span {
     font-size: 14px;
+  }
+
+  .blog-list-container ul li {
+    flex-direction: column;
+  }
+
+  .blog-list-container ul li div a img {
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: none;
+  }
+
+  .blog-list-container ul li div ul {
+    flex-wrap: wrap;
   }
 }
 
@@ -693,4 +750,12 @@ body,
     height: 125%;
     transform: scale(0.8);
   }
+}
+
+.no-background-image {
+  background-image: none;
+}
+
+.no-background-image:hover {
+  background-image: none;
 }

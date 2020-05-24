@@ -9,7 +9,8 @@ import About from "./About";
 import Contact from "./Contact";
 import Menu from "./Menu";
 // import Footer from "./Footer";
-// import Blog from "./Blog";
+import BlogList from "./BlogList";
+import BlogPost from "./BlogPost";
 
 class App extends React.Component {
   state = {
@@ -51,7 +52,8 @@ class App extends React.Component {
           <Route path="/portfolio" exact component={ProjectList} />
           <Route path="/about" exact component={About} />
           <Route path="/contact" exact component={Contact} />
-          {/* <Route path="/blog" exact component={Blog} /> */}
+          <Route path="/blog" exact component={BlogList} />
+          <Route path="/blog/:url" exact component={BlogPost} />
           {/* <Route component={Footer} /> */}
         </BrowserRouter>
       </div>

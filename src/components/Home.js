@@ -7,17 +7,15 @@ const Home = () => {
       <div className="home-container">
         <h1>Hello! My name is Andrea Diotallevi</h1>
         <p>
-          Check out my <Link to="/portfolio">latest projects</Link>
+          I am a full-stack software engineer based in London with expertise in
+          designing, implementing, and maintaining full-stack applications with
+          proficiency in Node, React, Python, Git, CI/CD, and RESTful APIs.
         </p>
         <p>
-          And my{" "}
-          <a
-            href="https://medium.com/@andreadiotallevi"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            latest articles
-          </a>
+          Check out my <Link to="/portfolio">latest projects.</Link>
+        </p>
+        <p>
+          And my <Link to="/blog">latest articles.</Link>
         </p>
       </div>
     </div>

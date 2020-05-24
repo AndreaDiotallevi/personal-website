@@ -4,6 +4,11 @@ const routes = [
     baseUrl: "/portfolio",
     pageTitle: "My Recent Software Development Projects",
   },
+  {
+    menuName: "Blog",
+    baseUrl: "/blog",
+    pageTitle: "",
+  },
   { menuName: "About", baseUrl: "/about", pageTitle: "My Story" },
   {
     menuName: "Contact",
@@ -14,11 +19,6 @@ const routes = [
     menuName: "Home",
     baseUrl: "/",
     pageTitle: "Full Stack Software Engineer",
-  },
-  {
-    menuName: "Blog",
-    baseUrl: "/blog",
-    pageTitle: "",
   },
 ];
 

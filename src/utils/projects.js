@@ -1,4 +1,4 @@
-const projects = [
+export default [
   {
     name: "The Movie Mapper",
     overview:
@@ -31,5 +31,3 @@ const projects = [
     testingTechnologies: "Jest, Supertest, Enzyme, CircleCI, Netlify",
   },
 ];
-
-export default projects;

@@ -15,6 +15,11 @@ const routes = [
     baseUrl: "/",
     pageTitle: "Full Stack Software Engineer",
   },
+  {
+    menuName: "Blog",
+    baseUrl: "/blog",
+    pageTitle: "",
+  },
 ];
 
 export default routes;

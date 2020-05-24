@@ -6,8 +6,9 @@
 
 * {
   font-family: "Apercu webfont", sans-serif;
+  -webkit-font-smoothing: antialiased;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 20px;
   margin: 0;
   padding: 0;
 }
@@ -17,13 +18,47 @@ a,
 h1,
 h2,
 h3,
-h4 {
+h4,
+li {
   color: rgb(11, 11, 11);
-  -webkit-font-smoothing: antialiased;
 }
 
-a {
+code {
+  background-color: rgb(245, 242, 240);
+  padding: 2px 4px;
+  font-size: 16px;
+}
+
+.navbar-link,
+.menu-item {
+  background-image: none;
+}
+
+a,
+.link-active {
   text-decoration: none;
+  background-image: linear-gradient(
+    transparent 0%,
+    transparent calc(50% - 9px),
+    rgba(0, 0, 255, 0.25) calc(50% - 9px),
+    rgba(0, 0, 255, 0.25) 100%
+  );
+  background-size: 100% 200%;
+}
+
+a:hover {
+  background-image: linear-gradient(
+    transparent 0%,
+    transparent calc(50% - 9px),
+    rgb(0, 0, 255, 0.25) calc(50% - 9px),
+    rgb(0, 0, 255, 0.25) 100%
+  );
+  background-position: 0px 100%;
+  transition: 0.3s;
+}
+
+p {
+  line-height: 1.4;
 }
 
 body,
@@ -81,7 +116,7 @@ body,
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  width: 750px;
+  width: 680px;
   margin-top: 40px;
   margin-right: 40px;
   margin-left: 40px;
@@ -103,21 +138,12 @@ body,
   margin-left: 15px;
 }
 
-.navbar-link:hover {
-  transition: 0.3s;
-  border-bottom: 5px solid rgb(0, 0, 255, 0.35);
-}
-
 .navbar-title {
   font-weight: bold;
   white-space: nowrap;
   font-size: 24px;
   text-transform: lowercase;
   opacity: 0.5;
-}
-
-.link-active {
-  border-bottom: 5px solid rgb(0, 0, 255, 0.35);
 }
 
 .navbar-right :nth-child(4) {
@@ -247,19 +273,9 @@ body,
 /* MenuItem */
 
 .menu-item {
-  padding-top: 20px;
+  margin-top: 20px;
   animation: 1s appear forwards;
   align-self: flex-end;
-  border-bottom: 5px solid white;
-}
-
-.menu-item:hover {
-  border-bottom: 5px solid rgb(0, 0, 255, 0.35);
-  transition: 0.3s;
-}
-
-.menu-item.link-active {
-  border-bottom: 5px solid rgb(0, 0, 255, 0.35);
 }
 
 .menu-component :nth-child(4) {
@@ -286,23 +302,19 @@ body,
 .home-container {
   display: flex;
   flex-direction: column;
-  width: 750px;
+  width: 680px;
   margin-bottom: 100px;
   animation: 1s appear forwards;
 }
 
 .home-container h1 {
-  font-size: 24px;
+  font-size: 36px;
   font-weight: bold;
   margin-bottom: 40px;
 }
 
 .home-container p {
   margin-bottom: 15px;
-}
-
-.home-container p a {
-  border-bottom: 5px solid rgb(0, 0, 255, 0.35);
 }
 
 .home-container img {
@@ -322,7 +334,7 @@ body,
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 750px;
+  width: 680px;
   height: 120px;
 }
 
@@ -345,7 +357,7 @@ body,
 .project-list-container {
   display: flex;
   flex-direction: column;
-  width: 750px;
+  width: 680px;
 }
 
 .project-list-item {
@@ -366,7 +378,7 @@ body,
 }
 
 .project-name {
-  font-size: 24px;
+  font-size: 36px;
   margin-bottom: 30px;
   font-weight: bold;
 }
@@ -374,10 +386,6 @@ body,
 .project-overview-component p {
   margin-bottom: 15px;
   width: 100%;
-}
-
-.project-overview-component p a {
-  border-bottom: 5px solid rgb(0, 0, 255, 0.35);
 }
 
 /* ProjectIFrame */
@@ -426,13 +434,13 @@ body,
 .about-container {
   display: flex;
   flex-direction: column;
-  width: 750px;
+  width: 680px;
   margin-bottom: 100px;
   animation: 1s appear forwards;
 }
 
 .about-overview-container h1 {
-  font-size: 24px;
+  font-size: 36px;
   font-weight: bold;
   margin-bottom: 40px;
 }
@@ -457,7 +465,7 @@ body,
 .contact-container {
   display: flex;
   flex-direction: column;
-  width: 750px;
+  width: 680px;
   margin-bottom: 100px;
   animation: 1s appear forwards;
 }
@@ -469,7 +477,7 @@ body,
 }
 
 .contact-container h1 {
-  font-size: 24px;
+  font-size: 36px;
   font-weight: bold;
   margin-bottom: 40px;
 }
@@ -482,7 +490,6 @@ body,
 }
 
 .contact-container div h4 {
-  border-bottom: 5px solid rgb(0, 0, 255, 0.35);
   margin-bottom: 7px;
   width: max-content;
 }
@@ -502,8 +509,95 @@ body,
 
 .blog-container {
   display: flex;
-  justify-content: center;
-  width: 750px;
+  flex-direction: column;
+  width: 680px;
+  overflow-x: auto;
+}
+
+.blog-container h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.blog-container h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.blog-container h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.blog-container h4 {
+  margin-top: 10px;
+}
+
+.blog-container div figure img {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.blog-container div figcaption {
+  text-align: center;
+  font-style: normal;
+  width: 100%;
+}
+
+.blog-container div figcaption p,
+.blog-container div figcaption p a {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.blog-container div figcaption p a {
+  background-image: linear-gradient(
+    transparent 0%,
+    transparent calc(50% - 6px),
+    rgba(0, 0, 255, 0.25) calc(50% - 6px),
+    rgba(0, 0, 255, 0.25) 100%
+  );
+}
+
+.blog-container p a {
+  background-image: linear-gradient(
+    transparent 0%,
+    transparent calc(50% - 9px),
+    rgba(0, 0, 255, 0.25) calc(50% - 9px),
+    rgba(0, 0, 255, 0.25) 100%
+  );
+}
+
+.blog-container p {
+  margin-top: 30px;
+}
+
+.blog-container p strong {
+  font-weight: bold;
+}
+
+.blog-container p a:hover {
+  background-image: linear-gradient(
+    transparent calc(50% - 9px),
+    rgb(0, 0, 255, 0.25) calc(50% - 9px),
+    rgb(0, 0, 255, 0.25) 100%
+  );
+  background-position: 0px 100%;
+}
+
+.blog-container ul {
+  list-style-position: inside;
+}
+
+.blog-container ul li {
+  margin-top: 25px;
+}
+
+.blog-container pre code,
+.blog-container span {
+  font-size: 16px;
 }
 
 /* Footer */
@@ -545,14 +639,14 @@ body,
 
 /* Media Queries */
 
-@media (min-width: 830px) {
+@media (min-width: 760px) {
   .toggle-button,
   .menu-component {
     display: none;
   }
 }
 
-@media (max-width: 830px) {
+@media (max-width: 760px) {
   .navbar-link {
     display: none;
   }
@@ -562,10 +656,25 @@ body,
   .project-list-container,
   .contact-container,
   .about-container,
+  .blog-container,
   .menu-component ul {
     margin-right: 40px;
     margin-left: 40px;
-    width: 100%;
+  }
+
+  h4,
+  p,
+  a,
+  em,
+  strong,
+  li,
+  code {
+    font-size: 18px;
+  }
+
+  .blog-container pre code,
+  .blog-container span {
+    font-size: 14px;
   }
 }
 

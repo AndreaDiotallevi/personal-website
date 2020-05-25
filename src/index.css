@@ -417,13 +417,13 @@ body,
 }
 
 .loading {
-  padding-bottom: 56.25%;
-  background: transparent;
+  position: relative;
   background-image: url("../src/assets/spinner.gif");
   background-position: center;
-  background-image: no-repeat;
-  background-size: 65%;
-  opacity: 0.3;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 35%;
+  opacity: 0.2;
 }
 
 /* About */
@@ -761,10 +761,6 @@ body,
     width: 100%;
     max-width: none;
   }
-
-  .loading {
-    transform: translate(0, 130px);
-  }
 }
 
 @media (max-width: 464px) {
@@ -781,6 +777,10 @@ body,
     width: 125%;
     height: 125%;
     transform: scale(0.8);
+  }
+
+  .loading {
+    background-size: 65%;
   }
 }
 

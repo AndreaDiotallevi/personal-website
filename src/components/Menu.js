@@ -3,20 +3,6 @@ import MenuItem from "./MenuItem";
 import routes from "../utils/routes";
 
 const Menu = ({ open, onClick, history }) => {
-  const pathname = history.location.pathname;
-
-  const getLinkClassName = (url) => {
-    let classes = "";
-
-    if (pathname.includes(url) && url !== "/") {
-      classes += "link-active";
-    } else if (pathname === "/" && url === "/") {
-      classes += "link-active";
-    }
-
-    return classes;
-  };
-
   const renderList = () => {
     if (open) {
       return (

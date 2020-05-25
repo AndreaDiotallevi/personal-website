@@ -13,7 +13,7 @@ const ProjectOverview = ({ project }) => {
           </li>
         ))}
       </ul>
-      <h4>Knowledge I learnt:</h4>
+      <h4>What I learnt:</h4>
       <ul>
         {project.learnings.map((learnings) => (
           <li key={learnings}>

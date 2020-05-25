@@ -5,7 +5,7 @@ const ProjectOverview = ({ project }) => {
     <div className="project-overview-component">
       <h1 className="project-name">{project.name}</h1>
       <p className="project-overview">{project.overview}</p>
-      <h4>Technologies I used:</h4>
+      <h4>Technologies:</h4>
       <ul>
         {project.technologies.map((technology) => (
           <li key={technology}>
@@ -13,7 +13,7 @@ const ProjectOverview = ({ project }) => {
           </li>
         ))}
       </ul>
-      <h4>What I learnt:</h4>
+      <h4>Learnings:</h4>
       <ul>
         {project.learnings.map((learnings) => (
           <li key={learnings}>

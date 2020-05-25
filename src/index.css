@@ -286,7 +286,7 @@ body,
 .home-container h1 {
   font-size: 36px;
   font-weight: bold;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .home-container p {
@@ -360,7 +360,7 @@ body,
 }
 
 .project-overview-component p {
-  font-size: 15px;
+  /* font-size: 15px; */
   margin-bottom: 15px;
 }
 
@@ -488,7 +488,7 @@ body,
 .contact-container div h4 {
   font-weight: bold;
   font-size: 36px;
-  margin-bottom: 7px;
+  margin-bottom: 10px;
   width: max-content;
 }
 

@@ -26,12 +26,13 @@ li {
 code {
   background-color: rgb(245, 242, 240);
   padding: 2px 4px;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .navbar-link,
 .menu-item {
   background-image: none;
+  text-transform: lowercase;
 }
 
 a,
@@ -59,6 +60,10 @@ a:hover {
 
 p {
   line-height: 1.4;
+}
+
+strong {
+  font-weight: bold;
 }
 
 body,
@@ -120,6 +125,7 @@ body,
   margin-top: 40px;
   margin-right: 40px;
   margin-left: 40px;
+  margin-bottom: 100px;
 }
 
 .navbar-right {
@@ -135,15 +141,15 @@ body,
 }
 
 .navbar-link {
-  margin-left: 15px;
+  margin-left: 10px;
 }
 
 .navbar-title {
   font-weight: bold;
   white-space: nowrap;
-  font-size: 24px;
-  text-transform: lowercase;
-  opacity: 0.5;
+  /* font-size: 30px; */
+  /* text-transform: lowercase; */
+  /* opacity: 0.5; */
 }
 
 /* MenuToggleButton */
@@ -284,7 +290,7 @@ body,
 }
 
 .home-container h1 {
-  font-size: 36px;
+  font-size: 30px;
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -349,17 +355,18 @@ body,
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 15px;
 }
 
 .project-name {
-  font-size: 36px;
+  font-size: 30px;
   margin-bottom: 10px;
   font-weight: bold;
 }
 
 .project-overview-component p {
   margin-bottom: 15px;
+  font-size: 15px;
 }
 
 .project-overview-component h4 {
@@ -444,7 +451,7 @@ body,
 }
 
 .about-overview-container h1 {
-  font-size: 36px;
+  font-size: 30px;
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -481,7 +488,7 @@ body,
 }
 
 .contact-container h1 {
-  font-size: 36px;
+  font-size: 30px;
   font-weight: bold;
   margin-bottom: 40px;
 }
@@ -495,7 +502,7 @@ body,
 
 .contact-container div h4 {
   font-weight: bold;
-  font-size: 36px;
+  font-size: 30px;
   margin-bottom: 10px;
   width: max-content;
 }
@@ -531,8 +538,7 @@ body,
 }
 
 .blog-list-container ul li div h1 a {
-  font-size: 36px;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: bold;
   background-image: none;
 }
@@ -588,7 +594,7 @@ body,
 }
 
 .blog-post-container h1 {
-  font-size: 36px;
+  font-size: 30px;
   font-weight: bold;
 }
 
@@ -599,7 +605,7 @@ body,
 }
 
 .blog-post-container h3 {
-  font-size: 36px;
+  font-size: 30px;
   font-weight: bold;
   margin-top: 50px;
 }
@@ -647,10 +653,6 @@ body,
   margin-top: 30px;
 }
 
-.blog-post-container p strong {
-  font-weight: bold;
-}
-
 .blog-post-container p a:hover {
   background-image: linear-gradient(
     transparent calc(50% - 9px),
@@ -670,7 +672,7 @@ body,
 
 .blog-post-container pre code,
 .blog-post-container span {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 /* Footer */

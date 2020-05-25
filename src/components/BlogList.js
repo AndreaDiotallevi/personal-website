@@ -29,7 +29,7 @@ const BlogList = () => {
                     </li>
                   ))}
                 </ul>
-                <Link to={`/blog/${blogPost.url}`}>Read more</Link>
+                <Link to={`/blog/${blogPost.url}`}>read more</Link>
               </div>
             </li>
           ))}

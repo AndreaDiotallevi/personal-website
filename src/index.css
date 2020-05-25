@@ -318,7 +318,6 @@ body,
   /* text-transform: lowercase; */
   text-align: center;
   font-size: 15px;
-  /* opacity: 0.5; */
 }
 
 /* ProjectList */
@@ -360,7 +359,6 @@ body,
 }
 
 .project-overview-component p {
-  /* font-size: 15px; */
   margin-bottom: 15px;
 }
 
@@ -416,6 +414,16 @@ body,
   transform: scale(0.5);
   transform-origin: left top;
   border: none;
+}
+
+.loading {
+  padding-bottom: 56.25%;
+  background: transparent;
+  background-image: url("../src/assets/spinner.gif");
+  background-position: center;
+  background-image: no-repeat;
+  background-size: 65%;
+  opacity: 0.3;
 }
 
 /* About */
@@ -752,6 +760,10 @@ body,
     margin-bottom: 10px;
     width: 100%;
     max-width: none;
+  }
+
+  .loading {
+    transform: translate(0, 130px);
   }
 }
 

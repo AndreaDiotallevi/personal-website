@@ -4,7 +4,6 @@ const ProjectIFrame = ({ project }) => {
   const [isLoading, setIsLoading] = useState(true);
 
   const hideSpinner = () => {
-    console.log("here loaded");
     setIsLoading(false);
   };
 

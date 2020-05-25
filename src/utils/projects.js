@@ -40,7 +40,7 @@ export default [
     name: "Albums Manager",
     overview:
       "A full-stack application built with the MERN stack and the LastFM Api that allows users to manage their personal album collections. Users can add albums dinamically to the collection, view all the albums, click on each album to see all the info, loan albums to friends, note the loan date & name on the album and mark the loaned album as returned. Users can also filter the albums that have been loaned to a specific friend.",
-    demoUrl: "https://albapp.com",
+    demoUrl: "https://albums-manager.herokuapp.com",
     githubUrl: "https://github.com/AndreaDiotallevi/albums-manager",
     technologies: ["Node", "Express", "MongoDB", "React", "CircleCI", "Heroku"],
     learnings: [

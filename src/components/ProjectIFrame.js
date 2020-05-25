@@ -11,8 +11,8 @@ const ProjectIFrame = ({ project }) => {
     <div className="project-iframe-component">
       <div className="device-border">
         <div className="responsive">
-          {isLoading ? <div className="loading"></div> : null}
           <iframe
+            className={isLoading ? "loading" : ""}
             src={project.demoUrl}
             title={project.name}
             onLoad={hideSpinner}

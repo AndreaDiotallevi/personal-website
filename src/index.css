@@ -147,9 +147,6 @@ body,
 .navbar-title {
   font-weight: bold;
   white-space: nowrap;
-  /* font-size: 30px; */
-  /* text-transform: lowercase; */
-  /* opacity: 0.5; */
 }
 
 /* MenuToggleButton */
@@ -599,13 +596,13 @@ body,
 }
 
 .blog-post-container h2 {
-  font-size: 30px;
+  font-size: 27px;
   font-weight: bold;
   margin-top: 50px;
 }
 
 .blog-post-container h3 {
-  font-size: 30px;
+  font-size: 23px;
   font-weight: bold;
   margin-top: 50px;
 }

@@ -100,10 +100,10 @@ body,
 
 @keyframes slideIn {
   0% {
-    transform: translateY(3%);
+    transform: translateX(3%);
   }
   100% {
-    transform: translateY(0);
+    transform: translateX(0);
   }
 }
 
@@ -114,6 +114,9 @@ body,
   justify-content: center;
   align-items: center;
   width: 100%;
+  background-color: white;
+  position: fixed;
+  z-index: 2;
 }
 
 #navbar-container {
@@ -122,10 +125,7 @@ body,
   align-items: center;
   width: 100%;
   width: 680px;
-  margin-top: 40px;
-  margin-right: 40px;
-  margin-left: 40px;
-  /* margin-bottom: 100px; */
+  margin: 40px;
 }
 
 .navbar-right {
@@ -253,19 +253,25 @@ body,
   display: flex;
   justify-content: flex-end;
   width: 100%;
+  margin-top: 105px;
+  position: fixed;
+  z-index: 2;
+  background-color: white;
+  height: 100%;
+  animation: 0.5s appear forwards;
 }
 
 .menu-component ul {
   width: 100%;
   display: flex;
   flex-direction: column;
+  animation: 1s slideIn forwards;
 }
 
 /* MenuItem */
 
 .menu-item {
   margin-top: 20px;
-  /* animation: 1s appear forwards; */
   align-self: flex-end;
 }
 
@@ -283,7 +289,7 @@ body,
   flex-direction: column;
   width: 680px;
   margin-bottom: 100px;
-  margin-top: 100px;
+  margin-top: 170px;
   /* animation: 1s appear forwards; */
 }
 
@@ -295,6 +301,7 @@ body,
 
 .home-container p {
   margin-bottom: 15px;
+  font-size: 15px;
 }
 
 .home-container img {
@@ -319,7 +326,6 @@ body,
 }
 
 .page-title {
-  /* text-transform: lowercase; */
   text-align: center;
   font-size: 15px;
 }
@@ -337,7 +343,7 @@ body,
   display: flex;
   flex-direction: column;
   width: 680px;
-  margin-top: 100px;
+  margin-top: 170px;
 }
 
 .project-list-item {
@@ -446,7 +452,7 @@ body,
   flex-direction: column;
   width: 680px;
   margin-bottom: 100px;
-  margin-top: 100px;
+  margin-top: 170px;
   /* animation: 1s appear forwards; */
 }
 
@@ -458,6 +464,7 @@ body,
 
 .about-container p {
   margin-bottom: 15px;
+  font-size: 15px;
 }
 
 .about-overview-container {
@@ -478,7 +485,7 @@ body,
   flex-direction: column;
   width: 680px;
   margin-bottom: 100px;
-  margin-top: 100px;
+  margin-top: 170px;
   /* animation: 1s appear forwards; */
 }
 
@@ -526,7 +533,7 @@ body,
   flex-direction: column;
   width: 680px;
   margin-bottom: 50px;
-  margin-top: 100px;
+  margin-top: 170px;
 }
 
 .blog-list-container ul li {
@@ -593,7 +600,7 @@ body,
   width: 680px;
   overflow-x: auto;
   margin-bottom: 150px;
-  margin-top: 100px;
+  margin-top: 170px;
 }
 
 .blog-post-container h1 {

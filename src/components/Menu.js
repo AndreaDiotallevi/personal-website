@@ -6,23 +6,25 @@ const Menu = ({ open, onClick, history }) => {
   const renderList = () => {
     if (open) {
       return (
-        <ul>
-          {routes.map((item, index) => (
-            <MenuItem
-              key={index}
-              onClick={onClick}
-              item={item}
-              history={history}
-            />
-          ))}
-        </ul>
+        <div className="menu-component">
+          <ul>
+            {routes.map((item, index) => (
+              <MenuItem
+                key={index}
+                onClick={onClick}
+                item={item}
+                history={history}
+              />
+            ))}
+          </ul>
+        </div>
       );
     } else {
       return null;
     }
   };
 
-  return <div className="menu-component">{renderList()}</div>;
+  return renderList();
 };
 
 export default Menu;

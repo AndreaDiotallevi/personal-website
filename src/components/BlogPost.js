@@ -6,6 +6,10 @@ const BlogPost = (props) => {
   const [markdown, setMarkdown] = useState("");
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
     async function fetchBlogPost() {
       const file = await import(`../blogPosts/${props.match.params.url}.md`);
       const response = await fetch(file.default);

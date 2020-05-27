@@ -7,8 +7,8 @@ export default [
     githubUrl: "https://github.com/AndreaDiotallevi/the-movie-mapper",
     technologies: ["React", "Redux", "JavaScript", "Python", "CircleCI", "AWS"],
     learnings: [
-      "Front End Architecture",
-      "Multiple Asynchronous APIs Calls",
+      "Asynchronous External APIs",
+      "Redux State Management",
       "Web Scraping",
       "AWS Deployment",
     ],
@@ -30,7 +30,7 @@ export default [
       "Heroku",
     ],
     learnings: [
-      "CRUD API Design",
+      "RESTful APIs Design",
       "SQL Relational Database",
       "Persistent Authentication",
       "Redis Session Store",
@@ -44,10 +44,9 @@ export default [
     githubUrl: "https://github.com/AndreaDiotallevi/albums-manager",
     technologies: ["Node", "Express", "MongoDB", "React", "CircleCI", "Heroku"],
     learnings: [
-      "Back End Architecture",
       "RESTful APIs Design",
-      "API Endpoint Testing",
       "Non Relational Database",
+      "API Endpoint Testing",
     ],
   },
   {

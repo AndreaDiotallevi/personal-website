@@ -12,11 +12,8 @@ const Home = () => {
           proficiency in Node, React, Python, Git, CI/CD, and RESTful APIs.
         </p>
         <p>
-          Check out my latest <Link to="/portfolio">projects</Link>
-          {"."}
-        </p>
-        <p>
-          And my latest <Link to="/blog">articles</Link>
+          Check out my latest <Link to="/portfolio">projects</Link> and{" "}
+          <Link to="/blog">articles</Link>
           {"."}
         </p>
       </div>

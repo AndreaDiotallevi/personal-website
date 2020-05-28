@@ -4,7 +4,6 @@ const Contact = () => {
   return (
     <div className="contact-component">
       <div className="contact-container">
-        {/* <h1>Let's Talk</h1> */}
         <div>
           <h4>Email</h4>
           <a href="mailto: andrea.diotallevi@outlook.com">

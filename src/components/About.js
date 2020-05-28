@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import profilePhoto from "../assets/profile-photo.jpg";
 
 const About = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="about-component">
       <div className="about-container">

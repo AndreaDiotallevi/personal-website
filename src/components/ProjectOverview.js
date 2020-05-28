@@ -16,7 +16,7 @@ const ProjectOverview = ({ project }) => {
         ))}
       </ul>
       <h4>
-        <strong>Learnings:</strong>
+        <strong>Skills:</strong>
       </h4>
       <ul>
         {project.learnings.map((learnings) => (

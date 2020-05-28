@@ -7,7 +7,7 @@ export default [
     summary:
       "In this article I explore the fundamental components of algorithm complexity analysis, describe how to derive an algorithm big-O and list all the common big-O classes of runtime complexity.",
     tags: ["Algorithms", "Big O Notation", "Time Complexity", "Scalability"],
-    date: "",
+    date: "15 Apr 2020",
   },
   {
     title:
@@ -19,5 +19,6 @@ export default [
     summary:
       "In this article, I explore the fundamental components of test-driven development, with an example of how to incrementally develop an algorithm using the TTD cycle.",
     tags: ["Test Driven Development", "Algorithms", "Javascript"],
+    date: "20 Feb 2020",
   },
 ];

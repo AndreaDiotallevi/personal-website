@@ -25,7 +25,9 @@ const BlogList = () => {
                 <h1>
                   <Link to={`/blog/${blogPost.url}`}>{blogPost.title}</Link>
                 </h1>
+                <p>{blogPost.date}</p>
                 <p>{blogPost.summary}</p>
+                {/* <p>{blogPost.date}</p> */}
                 <ul>
                   {blogPost.tags.map((tag) => (
                     <li key={tag}>
@@ -33,7 +35,10 @@ const BlogList = () => {
                     </li>
                   ))}
                 </ul>
-                <Link to={`/blog/${blogPost.url}`}>read more</Link>
+                <div>
+                  {/* <p>{blogPost.date}</p> */}
+                  <Link to={`/blog/${blogPost.url}`}>read more</Link>
+                </div>
               </div>
             </li>
           ))}

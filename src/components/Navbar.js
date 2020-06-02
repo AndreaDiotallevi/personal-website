@@ -19,8 +19,8 @@ const Navbar = ({ open, onClick, history }) => {
   };
 
   return (
-    <div id="navbar-component" className="navbar-component">
-      <div id="navbar-container">
+    <div className="navbar-component">
+      <div className="navbar-container">
         <div className="navbar-left">
           <Link to="/">
             <h1

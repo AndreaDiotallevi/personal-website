@@ -5,13 +5,13 @@ const Contact = () => {
     <div className="contact-component">
       <div className="contact-container">
         <div>
-          <h4>Email</h4>
+          <p>Email</p>
           <a href="mailto: andrea.diotallevi@outlook.com">
             andrea.diotallevi@outlook.com
           </a>
         </div>
         <div>
-          <h4>Social</h4>
+          <p>Social</p>
           <div>
             <p>
               <a

@@ -431,7 +431,7 @@ body,
   margin-right: 5px;
   margin-bottom: 5px;
   background-color: rgba(0, 0, 255, 0.25);
-  padding: 5px;
+  padding: 3px 10px;
   border-radius: 5px;
 }
 
@@ -614,7 +614,7 @@ body,
   margin-right: 5px;
   margin-bottom: 5px;
   background-color: rgba(0, 0, 255, 0.25);
-  padding: 5px;
+  padding: 3px 10px;
   border-radius: 5px;
 }
 

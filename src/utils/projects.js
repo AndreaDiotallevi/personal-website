@@ -18,7 +18,7 @@ export default [
     ],
   },
   {
-    name: "Archquery",
+    name: "ArchQuery",
     overview:
       "Stack Overflow for architects. A full-stack application that allows architects to ask, answer, tag and vote technical questions like software engineers do on Stack Overflow. The relational database schema and layout are inspired by the amazing Stack Exchange architecture. This application also features a persistent authentication system designed with passport.js and session storage with the Redis database.",
     demoUrl: "https://archquery.herokuapp.com/",

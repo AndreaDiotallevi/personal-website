@@ -7,9 +7,13 @@ export default [
     githubUrl: "https://github.com/AndreaDiotallevi/the-movie-mapper",
     technologies: ["React", "Redux", "JavaScript", "Python", "CircleCI", "AWS"],
     learnings: [
+      "Single Page Application",
+      "Client Side Rendering",
       "Asynchronous External APIs",
-      "Redux State Management",
       "Web Scraping",
+      "Global State Management",
+      "Asynchronous Testing",
+      "Geolocation",
       "AWS Deployment",
     ],
   },
@@ -31,9 +35,13 @@ export default [
     ],
     learnings: [
       "RESTful APIs Design",
-      "SQL Relational Database",
+      "CRUD Operations",
+      "Relational Database Associations",
+      "Row SQL Queries",
       "Persistent Authentication",
-      "Redis Session Store",
+      "Session Storage",
+      "WYSIWYG HTML Editor",
+      "Heroku Deployment",
     ],
   },
   {
@@ -45,8 +53,9 @@ export default [
     technologies: ["Node", "Express", "MongoDB", "React", "CircleCI", "Heroku"],
     learnings: [
       "RESTful APIs Design",
-      "Non Relational Database",
+      "Non-Relational Database",
       "API Endpoint Testing",
+      "React Testing",
     ],
   },
   {
@@ -64,6 +73,7 @@ export default [
       "Netlify",
     ],
     learnings: [
+      "Static Website",
       "Mobile And Desktop Responsive Design",
       "Browser Interactive Animations",
     ],

@@ -54,8 +54,11 @@ export default [
     learnings: [
       "RESTful APIs Design",
       "Non-Relational Database",
+      "CI / CD Pipelines",
+      "Client Side Routing",
+      "URL Query String",
       "API Endpoint Testing",
-      "React Testing",
+      "React Components Testing",
     ],
   },
   {
@@ -76,6 +79,12 @@ export default [
       "Static Website",
       "Mobile And Desktop Responsive Design",
       "Browser Interactive Animations",
+      "Algorithms",
+      "Fractals",
+      "Recursion",
+      "Pixel Sorting",
+      "Image Processing",
+      "Generative Art",
     ],
   },
 ];

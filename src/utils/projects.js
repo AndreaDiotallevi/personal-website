@@ -41,7 +41,7 @@ export default [
       "Persistent Authentication",
       "Session Storage",
       "WYSIWYG HTML Editor",
-      "Heroku Deployment",
+      "Amazon S3 Storage",
     ],
   },
   {
